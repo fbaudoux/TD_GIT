@@ -53,7 +53,12 @@ On peut voir l'historique des versions avec ```git log```
 #### Quel est l'interêt de la zone de staging ?
 
 * On peut avoir des fichiers dans son répertoire de travail et ne pas vouloir les ajouter au contrôle de version
+
 * On peut modifier 10 fichiers dans son répertoire de travail mais n'inclure que la modification d'un seul dans le prochain commit.
+
+Exemple : Je crée 2 nouvelles fonctions , mais je n'en "commit" qu'une seule pour le moment.
+
+![image](uploads/95e69c68a2fd5937e1b36b5238b0c3f1/image.png)
 
 #### Comment on peut enlever un fichier de la zone de staging ?
 
