@@ -154,13 +154,11 @@ On voit dans l'historique que le commit de la fonction11 est désormais présent
 
 ![image](uploads/b8ece36daab3d162312e034710db4507/image.png)
 
+C'est plus clair avec une vue de type graphe.
+
+![image](uploads/b9673ae6134e38cdecaaec144660a91c/image.png)
+
 ## Merge et Rebase
-
-* Faire 1 commit sur la branche dev pour ajouter 1 fonctions
-* Faire un commit sur la branche master pour corriger la fonction 1
-* Faire un merge de dev vers master
-* Regarder l'historique des commits dans la vue graph de la forge
-
 * Repartir en arrière avec git reset --hard et git push -f (pas bien !)
 * Faire un rebase de la branche dev sur master. ( checkout dev , puis rebase master puis push)
 * Faire un merge de dev dans master ( checkout master, merge dev , puis push )
