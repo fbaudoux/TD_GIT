@@ -4,8 +4,19 @@ Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simula
 
 ## Je commence à travailler sur un projet perso
 
+Je vais juste travailler sur mon ordi pour commencer, donc je me place dans un répertoire de travail et 
+je tape : 
+```git init```
 
+Cela veut juste dire que je vais utiliser git comme gestionnaire de source pour ce projet.
 
+![image](uploads/81eec1e34f681a4583bc1d14793d939d/image.png)
+
+On peut constater qu'un répertoire .git a été crée dans mon répertoire 
+
+![image](uploads/e982c4f88b16f1edbe284ef722884dac/image.png)
+
+C'est dans ce répertoire que git va enregistrer tout ce qui lui est nécessaire pour 
 
 ## Merge et Rebase
 
