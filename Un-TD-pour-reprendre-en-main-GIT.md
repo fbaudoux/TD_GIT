@@ -62,6 +62,15 @@ Exemple : Je crée 2 nouvelles fonctions , mais je n'en "commit" qu'une seule po
 
 #### Comment on peut enlever un fichier de la zone de staging ?
 
+Si j'ai ajouté par erreur un fichier à la zone de staging , comme ici ou j'ai ajouté par erreur la fonction4
+
+![image](uploads/03e7f7086a49b010d3b64ba24cd92b13/image.png)
+
+Je peux retirer un fichier de la zone de staging grâce à ```git reset```
+
+![image](uploads/5b06fb70a46dbb03b212a30003b7bc92/image.png)
+
+
 #### Comment on peut voir les modifications d'un fichier qui est en zone de staging ? 
 ## Merge et Rebase
 
