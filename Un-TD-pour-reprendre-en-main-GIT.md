@@ -22,7 +22,7 @@ Si je demande un ```git status```, git m'indique que pour le moment je n'ai de n
 
 ![image](uploads/ea7d02f25ceea08d4843a133726d98b1/image.png)
 
-### J'ajoute une première fonction 
+#### J'ajoute une première fonction 
 
 On simule l'ajout d'une fonction par l'ajout d'un fichier qui à pour nom le fonction de la fonction.
 ![image](uploads/66a341903ee31558568cc2c36041f373/image.png)
@@ -92,6 +92,20 @@ Dès qu'il a été ajouté au staging alors cette commande ne fonctionne plus :
 Et il faut utiliser : 
 ![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
 
+
+### Mon projet prend de l'ampleur
+J'ai ajouté une dizaine de fonctions dans mon logiciel et il va être mise à disposition d'utilisateurs.
+Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.
+Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.
+C'est comme si je devais avoir 2 versions différentes de mon produit...  Les branches sont là pour ça.
+
+Jusqu'à présent j'ai toujours travaillé sur la branche "master" ou "main" ( cela dépend de la version de git )
+
+Si je vais git branch --all 
+
+![image](uploads/46dfd7685868edaed3c0a344aad124bb/image.png)
+
+Je vois 
 
 
 ## Merge et Rebase
