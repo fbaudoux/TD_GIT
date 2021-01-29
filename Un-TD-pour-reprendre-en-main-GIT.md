@@ -2,7 +2,7 @@ Reprise en main de GIT
 
 Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simulant des cas d'usage de la vie réelle.
 
-## Je commence à travailler sur un projet perso
+### Je commence un nouveau projet perso
 
 Je vais juste travailler sur mon ordi pour commencer, donc je me place dans un répertoire de travail et 
 je tape : 
@@ -16,7 +16,14 @@ On peut constater qu'un répertoire .git a été crée dans mon répertoire
 
 ![image](uploads/e982c4f88b16f1edbe284ef722884dac/image.png)
 
-C'est dans ce répertoire que git va enregistrer tout ce qui lui est nécessaire pour 
+C'est dans ce répertoire que git va enregistrer tout ce qui lui est nécessaire pour historiser les modifications sur mon projet
+
+Si je demande un ```git status```, git m'indique que pour le moment je n'ai de neuf dans ce projet
+
+![image](uploads/ea7d02f25ceea08d4843a133726d98b1/image.png)
+
+### J'ajoute une première fonction 
+
 
 ## Merge et Rebase
 
