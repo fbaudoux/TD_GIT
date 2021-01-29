@@ -89,29 +89,62 @@ Dès qu'il a été ajouté au staging alors cette commande ne fonctionne plus :
 
 ![image](uploads/aea02ae223e480f7cd80b68167762b3f/image.png)
 
-Et il faut utiliser : 
+Et il faut utiliser :  
 ![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
 
 
 ### Mon projet prend de l'ampleur
-J'ai ajouté une dizaine de fonctions dans mon logiciel et il va être mise à disposition d'utilisateurs.
-Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.
-Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.
+J'ai ajouté 10 fonction à mon logiciel et il va être mise à disposition d'utilisateurs.
+Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.  
+Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.  
 C'est comme si je devais avoir 2 versions différentes de mon produit...  Les branches sont là pour ça.
 
 Jusqu'à présent j'ai toujours travaillé sur la branche "master" ou "main" ( cela dépend de la version de git )
 
-Si je vais git branch --all 
+Si je tape la commande ```git branch --all``` 
 
 ![image](uploads/46dfd7685868edaed3c0a344aad124bb/image.png)
 
-Je vois 
+Je vois qu'il n'existe qu'une seule branche à mon projet.
+Je décide donc du fonctionnement suivant, la branche "main" me servira pour le version de production et je vais créer une branche "develop" qui me servira à ajouter des nouvelles fonctions.
+
+```git branch develop``` me permet de créer ma branche.
+
+![image](uploads/5cd1590bf0a553a5315f6afe2dc90952/image.png)
+
+J'ai donc désormais 2 branches pour mon projet. Si je veux ajouter des nouvelles fonctions, je dois travailler sur la branche "develop". Pour me placer sur la branche "develop", j'utilise la commande ``` git checkout develop```
+
+![image](uploads/b3960036b743b70f170d63b7234e53bc/image.png)
+
+Je peux alors ajouter une nouvelle fonction, la onzième, à mon projet sans craindre de déstabiliser la version de production.
+
+![image](uploads/c7241218ed038d525508acee6b737266/image.png)
+
+En effet, si je retourne sur ma branche "main", on ne trouve plus trace de la fonction11 
+
+![image](uploads/600243dc785cae086f62578c0d9e243b/image.png)
+
+Je peux donc utiliser "main" pour corriger uniquement les bugs de production
+Par exemple, disons que la fonction5 avait un bug et que la correction consiste à renommer le fichier fonction5.html en fonction5Corrigee.html
+
+![image](uploads/3542f3b3d25d7b2c41c15fec22bd7750/image.png)
+
+Si je regarde l'historique de ma branche "main" grace à ```git log```
+![image](uploads/2668d3fd523af01a4036cb06098043dd/image.png)
+
+Je vois que je n'ai qu'un correctif qui a été appliqué depuis que la version est partie en production.
+Je suis donc plus serein pour livrer les corrections
+
+### Gérer la vie des 2 branches 
+
+Corriger les bugs et apporter de la stabilité c'est bien , mais les utilisateurs sont quand même très demandeurs de nouvelles fonctionnalités. Ma fonction11 est très attendue par la communauté et je voudrais l'inclure dans la version de production.
+
+Je peux demander à git de ramener les modifications faites dans la branche "develop" vers la branche "main" via la commande ```git merge``` 
+
 
 
 ## Merge et Rebase
 
-* Créer un nouveau projet , qui va disposer d'une branche master et d'une branche dev
-* Faire 2 commits sur la branche master pour ajouter 2 fonctions
 * Faire 1 commit sur la branche dev pour ajouter 1 fonctions
 * Faire un commit sur la branche master pour corriger la fonction 1
 * Faire un merge de dev vers master
