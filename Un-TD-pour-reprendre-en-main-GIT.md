@@ -141,6 +141,17 @@ Corriger les bugs et apporter de la stabilité c'est bien , mais les utilisateur
 
 Je peux demander à git de ramener les modifications faites dans la branche "develop" vers la branche "main" via la commande ```git merge``` 
 
+Si on regarde l'historique de la branche "develop" :  
+![image](uploads/9369d002a0fb55aa2792b95202e5963b/image.png)
+
+On voit qu'il y a qu'un commit qui a été ajouté depuis que cette branche a été tirée depuis "main", dont le merge va consister à rapatrier ce commit.
+
+On se place sur la branche "cible" ( dans notre cas , "main" ) et on lance la commande de merge en précisant la branche "source" ( dans notre cas, "develop" )
+
+![image](uploads/c973272889a316b5526c4f3e78fba397/image.png)
+
+On voit dans l'historique que le commit de la fonction11 vient d'être ajouté à la branche "main"
+
 
 
 ## Merge et Rebase
