@@ -33,7 +33,31 @@ Si je demande un ```git status```, git m'indique ce qui a changé.
 
 Git a détecté qu'il y a un nouveau fichier et nous indique que si nous voulons l'ajouter à son contrôle de version, nous pouvons faire ``` git add nom_du_fichier ```
 
+![image](uploads/35a26c8abae3d1e42ee7b4a27e9065b7/image.png)
 
+![image](uploads/c0c01d781c126e6b5259c729d4911efe/image.png)
+
+On a toujours aucun commit donc aucune version de notre code source !!
+On sait juste que le fichier que l'on vient d'ajouter fait partie des changements qui auront lieu dans le prochain commit.
+
+Donc contrairement à d'autres gestionnaires de sources, Git introduit la notion de zone de "staging" dans laquelle on trouve l'ensemble des modification qui feront partie du prochain commit.
+
+On peut enfin créer notre première version du code en faisant un ```git commit```
+
+![image](uploads/e0248f369e513a7b06e241e8524a68df/image.png)
+
+On peut voir l'historique des versions avec ```git log```
+
+![image](uploads/2882dc9ddcfc527de1c3a23256d942c6/image.png)
+
+#### Quel est l'interêt de la zone de staging ?
+
+* On peut avoir des fichiers dans son répertoire de travail et ne pas vouloir les ajouter au contrôle de version
+* On peut modifier 10 fichiers dans son répertoire de travail mais n'inclure que la modification d'un seul dans le prochain commit.
+
+#### Comment on peut enlever un fichier de la zone de staging ?
+
+#### Comment on peut voir les modifications d'un fichier qui est en zone de staging ? 
 ## Merge et Rebase
 
 * Créer un nouveau projet , qui va disposer d'une branche master et d'une branche dev
