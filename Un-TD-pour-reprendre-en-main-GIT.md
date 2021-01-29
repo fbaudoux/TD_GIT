@@ -1,6 +1,11 @@
-# DEVOPS_TD1
-
 Reprise en main de GIT
+
+Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simulant des cas d'usage de la vie réelle.
+
+## Je commence à travailler sur un projet perso
+
+
+
 
 ## Merge et Rebase
 
