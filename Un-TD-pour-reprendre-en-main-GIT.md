@@ -150,9 +150,9 @@ On se place sur la branche "cible" ( dans notre cas , "main" ) et on lance la co
 
 ![image](uploads/c973272889a316b5526c4f3e78fba397/image.png)
 
-On voit dans l'historique que le commit de la fonction11 vient d'être ajouté à la branche "main"
+On voit dans l'historique que le commit de la fonction11 est désormais présent dans la branche "main" , ainsi qu'un commit de merge
 
-
+![image](uploads/b8ece36daab3d162312e034710db4507/image.png)
 
 ## Merge et Rebase
 
