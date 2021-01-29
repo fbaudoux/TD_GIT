@@ -158,11 +158,20 @@ C'est plus clair avec une vue de type graphe.
 
 ![image](uploads/b9673ae6134e38cdecaaec144660a91c/image.png)
 
-## Merge et Rebase
-* Repartir en arrière avec git reset --hard et git push -f (pas bien !)
-* Faire un rebase de la branche dev sur master. ( checkout dev , puis rebase master puis push)
-* Faire un merge de dev dans master ( checkout master, merge dev , puis push )
-* Regarder l'historique des commits dans la vue graph de la forge
+ON peut également reprendre les corrections dans la branche de développement.
+
+![image](uploads/e1d5b053cf6e4b023193c2b1e7ca7609/image.png)
+
+![image](uploads/76e34a4f2f14c390549bf615dbd690d8/image.png)
+
+### Une alternative pour ceux qui souhaitent garder un historique plus lisible 
+
+![image](uploads/3b4c9467f30c2a4ba7ef244c80fedb64/image.png)
+
+![image](uploads/8c0789b8b4d5a9d0e528facfe2133e39/image.png)
+
+![image](uploads/fe2c3ab1f83befe3da415c280e8624dd/image.png)
+
 
 ## Tags
 
