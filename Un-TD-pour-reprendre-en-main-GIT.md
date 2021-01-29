@@ -24,6 +24,15 @@ Si je demande un ```git status```, git m'indique que pour le moment je n'ai de n
 
 ### J'ajoute une première fonction 
 
+On simule l'ajout d'une fonction par l'ajout d'un fichier qui à pour nom le fonction de la fonction.
+![image](uploads/66a341903ee31558568cc2c36041f373/image.png)
+
+Si je demande un ```git status```, git m'indique ce qui a changé.
+
+![image](uploads/5b4acde64a3087233e780575549e2f18/image.png)
+
+Git a détecté qu'il y a un nouveau fichier et nous indique que si nous voulons l'ajouter à son contrôle de version, nous pouvons faire ``` git add nom_du_fichier ```
+
 
 ## Merge et Rebase
 
