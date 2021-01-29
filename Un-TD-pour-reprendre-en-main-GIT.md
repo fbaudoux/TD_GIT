@@ -71,7 +71,29 @@ Je peux retirer un fichier de la zone de staging grâce à ```git reset```
 ![image](uploads/5b06fb70a46dbb03b212a30003b7bc92/image.png)
 
 
-#### Comment on peut voir les modifications d'un fichier qui est en zone de staging ? 
+#### Comment on peut voir les modifications qui ont été réalisée sur un fichier ? 
+
+Par exemple, si je modifier mon fichier fonction1.html qui contient initialement ça : 
+
+![image](uploads/c7e230635e15014ae5b070bb71b1b6e9/image.png)
+
+vers ça : 
+
+![image](uploads/a0dd79eccf9ab424f6badcc5aacae90f/image.png)
+
+Tant que le fichier n'a pas été ajouté en zone de staging , je peux faire :
+
+![image](uploads/8f8f648bb0640bc74282d245f32317a2/image.png)
+
+Dès qu'il a été ajouté au staging alors cette commande ne fonctionne plus :
+
+![image](uploads/aea02ae223e480f7cd80b68167762b3f/image.png)
+
+Et il faut utiliser : 
+![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
+
+
+
 ## Merge et Rebase
 
 * Créer un nouveau projet , qui va disposer d'une branche master et d'une branche dev
