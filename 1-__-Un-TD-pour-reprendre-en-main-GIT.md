@@ -269,9 +269,27 @@ Impossible d'envoyer via un lien remote un nouveau commit si nous n'avons pas lo
 
 Pour récupérer les derniers commits, il faut utiliser la commande ```git pull```
 
+Pour bien comprende, regardons le log avant le pull  
 ![image](uploads/6af8d52e304e3d4af650c4323881e5c0/image.png)
 
+Puis faison le pull et regardons le log juste après
 ![image](uploads/ecf000c4ade36813f89580d6270ff92b/image.png)
 
+On comprend mieux, avec cette vue en graph, que l'on vient de prendre un 'commit de merge' 
 ![image](uploads/04e7f5de2cf6f6eeb06c6bfaab58def8/image.png)
 
+
+Il y a plusieurs écoles face à cette situation.
+* On peut être tenté pour éviter ça de faire des pulls fréquemment et surtout avant de faire un commit puis de faire le push dans la foulée. Cela va réduire les risques , et si jamais il y a quand même un commit de merge , c'est accepté 
+
+* On ne veut pas de commit de merge et dans ce cas, on peut décider de récrire l'histoire
+
+J'ai 2 commit à envoyer , mais le deuxième est un commit de merge.
+![image](uploads/f3e63c5fb6d688e879adced93c9eeaab/image.png)  
+
+Je reviens un commit en arrière grâce à git reset.
+Je fais comme si j'avais commencé à développer la fonction B après que la fonction A ai été ajouté dans la forge grâce à git rebase
+
+![image](uploads/345996af81357aa658ccbcebd80974d0/image.png)
+
+Et ensuite je push.
