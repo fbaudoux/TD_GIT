@@ -203,15 +203,49 @@ Un développeur qui doit récupérer le code source aura juste à exécuter la c
 
 ![image](uploads/b15dcdb3b659034fbd234e3875ca843d/image.png)
 
-Il pourra alors travailler sur une copie locale du code source, créer des branches , faire des commit ...
-Quand il sera satisfait de son travail, il pourra le remonter vers la forge grâce à la commande 
-git push en précisant le remote ( c'est à dire l'emplacement de la forge et le nom de la branche.
-''' git push origin main''' va remonter sur le remote origin le contenu de la branche main
+Il pourra alors travailler sur une copie locale du code source, créer des branches , faire des commit, etc.
+Comme il a récupérer le projet depuis la forge, il existe un lien l'espace de travail local à son poste et la forge.
+Ce lien est appelé "remote"
 
-Si on ne précise pas le nom de la forge , git va utiliser le nom 
+On peut lister les différentes remotes d'un espace de travail local en faisant 
+```git remote -v```
 
+Dans notre cas, cela donne
 
-( par défaut le nom du remote associé à la branche courante ) et le nom de la branche (par défaut la branche courante.
+![image](uploads/8748b0d8dcfaa8e5b466ef898480933b/image.png)
+
+Nous avons un seul remote déclaré , dont le nom est "origin" et désigne la forge de l'IUT.
+
+Grâce à ce lien remote, quand le développeur est satisfait de son travail local, il pourra le remonter vers la forge grâce à la commande git push.
+
+git push , prend en premier paramètre le nom d'un remote et en second paramètre le nom d'une branche.
+
+Par exemple, ''' git push origin main''' va remonter via le remote origin le contenu de la branche main
+
+Attention toutefois à certaines subtilités. Avec git push , le nom de la remote et le nom de la branche sont optionnels.
+
+Si on ne précise pas le nom de la branche, git utilise la branche courante de l'espace de travail
+Si on ne précise pas le nom de remote, git utilise le remote associé à la branche.
+
+__Il y a un remote associé à une branche ????__
+Oui , on peut d'ailleurs voir les remote pour chaque branche via la commande ```git branch -vv```
+
+![image](uploads/d263b61a8b15fe381b29a8fa0cf1db8f/image.png)
+
+Dans le cas d'une nouvelle branche locale, on a pas de remote , donc si on essaye de faire un push sur une branche de ce type, on va recevoir un message d'erreur
+
+![image](uploads/f12248c3f4ce4acbf297fa2cccf67cde/image.png)
+
+git nous affiche lui même la solution, pour ajouter une remote par défaut à une branche, il faut utiliser ```git push --setupstream nom_du_remote```
+
+On ne devra le faire qu'une fois par branche , car ensuite la branche gardera son remote associé.
+
+![image](uploads/e876ae1004bd921d76296eb87396c99b/image.png)
+
+Désormais un simple ```git push``` sans aucun argument nous permettra de remonter les commits vers la forge
+
+![image](uploads/0703a249b890614964d007901af584c0/image.png)
+
 
 ## L'enfer c'est les autres
 
