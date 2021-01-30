@@ -9,9 +9,10 @@ Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simula
 3. [Je monte une équipe de développement pour mon projet](#paragraph2)
 
 
-### Je commence un nouveau projet perso  <a name="introduction"></a>
+# Je commence un projet <a name="introduction"></a>
 
-Je vais juste travailler sur mon ordi pour commencer, donc je me place dans un répertoire de travail et 
+Pour le moment, c'est un projet personnel,je vais juste travailler sur mon ordi pour commencer.  
+Je me place dans un répertoire de travail et 
 je tape : 
 ```git init```
 
@@ -29,7 +30,7 @@ Si je demande un ```git status```, git m'indique que pour le moment je n'ai de n
 
 ![image](uploads/ea7d02f25ceea08d4843a133726d98b1/image.png)
 
-#### J'ajoute une première fonction 
+## J'ajoute une première fonction 
 
 On simule l'ajout d'une fonction par l'ajout d'un fichier qui à pour nom le fonction de la fonction.
 ![image](uploads/66a341903ee31558568cc2c36041f373/image.png)
@@ -57,7 +58,7 @@ On peut voir l'historique des versions avec ```git log```
 
 ![image](uploads/2882dc9ddcfc527de1c3a23256d942c6/image.png)
 
-#### Quel est l'interêt de la zone de staging ?
+### Quel est l'interêt de la zone de staging ?
 
 * On peut avoir des fichiers dans son répertoire de travail et ne pas vouloir les ajouter au contrôle de version
 
@@ -67,7 +68,7 @@ Exemple : Je crée 2 nouvelles fonctions , mais je n'en "commit" qu'une seule po
 
 ![image](uploads/95e69c68a2fd5937e1b36b5238b0c3f1/image.png)
 
-#### Comment on peut enlever un fichier de la zone de staging ?
+### Comment on peut enlever un fichier de la zone de staging ?
 
 Si j'ai ajouté par erreur un fichier à la zone de staging , comme ici ou j'ai ajouté par erreur la fonction4
 
@@ -78,7 +79,7 @@ Je peux retirer un fichier de la zone de staging grâce à ```git reset```
 ![image](uploads/5b06fb70a46dbb03b212a30003b7bc92/image.png)
 
 
-#### Comment on peut voir les modifications qui ont été réalisée sur un fichier ? 
+### Comment on peut voir les modifications qui ont été réalisée sur un fichier ? 
 
 Par exemple, si je modifier mon fichier fonction1.html qui contient initialement ça : 
 
@@ -100,7 +101,7 @@ Et il faut utiliser :
 ![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
 
 
-### Mon projet prend de l'ampleur   <a name="paragraph1"></a>
+# Je livre mon projet aux utilisateurs  <a name="paragraph1"></a>
 J'ai ajouté 10 fonction à mon logiciel et il va être mise à disposition d'utilisateurs.
 Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.  
 Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.  
@@ -180,7 +181,7 @@ ON peut également reprendre les corrections dans la branche de développement.
 ![image](uploads/fe2c3ab1f83befe3da415c280e8624dd/image.png)
 
 
-### Je travaille en équipe <a name="paragraph2"></a>
+# Je monte une équipe de développement pour mon projet <a name="paragraph2"></a>
 
 ## Tags
 
