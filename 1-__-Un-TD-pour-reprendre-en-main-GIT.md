@@ -304,3 +304,15 @@ Et ensuite je push
 
 
 ### Le cas ou cela se passe moins bien
+
+Alice et Bob commencent à travailler sur notre projet. 
+Alice doit réaliser la fonctionC
+Bob doit réaliser la fonctionD
+
+Les 2 fonctions C et D utilisent une librairie commune libCD.txt qu'il faut modifier pour la fonction C et pour la fonction D.
+
+Alice realise la fonctionC et remonte son commit dans la forge la première.
+Lorsque Bob veut à son tour remonter son commit pour ajouter la fonctionD, il obtient
+
+
+
