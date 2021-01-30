@@ -101,7 +101,7 @@ Et il faut utiliser :
 ![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
 
 
-# Je livre mon projet aux utilisateurs  <a name="paragraph1"></a>
+# Je livre mon projet aux beta-testeurs <a name="paragraph1"></a>
 J'ai ajouté 10 fonction à mon logiciel et il va être mise à disposition d'utilisateurs.
 Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.  
 Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.  
@@ -166,7 +166,7 @@ C'est plus clair avec une vue de type graphe.
 
 ![image](uploads/b9673ae6134e38cdecaaec144660a91c/image.png)
 
-ON peut également reprendre les corrections dans la branche de développement.
+On peut également reprendre les corrections dans la branche de développement.
 
 ![image](uploads/e1d5b053cf6e4b023193c2b1e7ca7609/image.png)
 
@@ -181,7 +181,13 @@ ON peut également reprendre les corrections dans la branche de développement.
 ![image](uploads/fe2c3ab1f83befe3da415c280e8624dd/image.png)
 
 
-# Je monte une équipe de développement pour mon projet <a name="paragraph2"></a>
+# Mon projet va partir en production <a name="paragraph2"></a>
+
+Les choses sérieuses vont commencer, j'ai une équipe qui va travailler sur le projet.
+J'ai besoin d'une forge pour que le code source ne soit pas perdu si mon ordinateur lâche mais également pour le partager avec les membres de l'équipe.
+
+ 
+
 
 ## Tags
 
