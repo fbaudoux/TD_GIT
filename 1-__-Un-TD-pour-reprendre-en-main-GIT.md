@@ -253,11 +253,15 @@ Dès que l'on commence à travailler à plusieurs sur un projet, on va devoir g�
 
 Nous allons procéder par l'exemple pour reproduire certaines situations fâcheuses et voir comment git permet de les gérer.
 
+
+
+### Le cas ou cela se passe bien
+
 Alice et Bob commencent à travailler sur notre projet. 
 Alice doit réaliser la fonctionA
 Bob doit réaliser la fonctionB
 
-Tous les deux clone le projet depuis la forge et se placent sur la branche "develop"
+Tous les deux clonent le projet depuis la forge et se placent sur la branche "develop"
 
 Alice realise la fonctionA et remonte son commit dans la forge la première.
 Lorsque Bob veut à son tour remonter son commit pour ajouter la fonctionB, il obtient   
@@ -280,7 +284,7 @@ On comprend mieux, avec cette vue en graph, que l'on vient de prendre un 'commit
 
 
 Il y a plusieurs écoles face à cette situation.
-* On peut être tenté pour éviter ça de faire des pulls fréquemment et surtout avant de faire un commit puis de faire le push dans la foulée. Cela va réduire les risques , et si jamais il y a quand même un commit de merge , c'est accepté 
+* On peut être tenté, pour éviter ce cas de figure , de faire des pulls fréquemment et surtout avant de faire un commit puis de faire le push dans la foulée. Cela va réduire les risques , et si jamais il y a quand même un commit de merge , c'est accepté 
 
 * On ne veut pas de commit de merge et dans ce cas, on peut décider de récrire l'histoire
 
@@ -292,4 +296,11 @@ Je fais comme si j'avais commencé à développer la fonction B après que la fo
 
 ![image](uploads/345996af81357aa658ccbcebd80974d0/image.png)
 
-Et ensuite je push.
+Et ensuite je push
+
+![image](uploads/62f738e44204a1b0153a927d972320f5/image.png)
+
+![image](uploads/de665b8cf48957e2fbb1de0647039e3f/image.png)
+
+
+### Le cas ou cela se passe moins bien
