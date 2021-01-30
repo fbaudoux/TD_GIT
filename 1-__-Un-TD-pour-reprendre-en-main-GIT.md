@@ -273,5 +273,5 @@ Pour récupérer les derniers commits, il faut utiliser la commande ```git pull`
 
 ![image](uploads/ecf000c4ade36813f89580d6270ff92b/image.png)
 
-
+![image](uploads/04e7f5de2cf6f6eeb06c6bfaab58def8/image.png)
 
