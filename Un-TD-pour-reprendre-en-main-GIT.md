@@ -186,7 +186,15 @@ On peut également reprendre les corrections dans la branche de développement.
 Les choses sérieuses vont commencer, j'ai une équipe qui va travailler sur le projet.
 J'ai besoin d'une forge pour que le code source ne soit pas perdu si mon ordinateur lâche mais également pour le partager avec les membres de l'équipe.
 
- 
+Je vais utiliser GitLab comme forge.  
+Je me connecte à la forge de l'IUT et je demande la création d'un nouveau projet "test".  
+La forge de donne immédiatement toutes les informations dont j'ai besoin pour intégrer mon code source
+![image](uploads/5f46516c19e368dd221f67c7450c5a30/image.png)
+
+Je n'ai plus qu'a suivre ce que la forge m'indique   
+![image](uploads/36b40702994737b02613f0871ae0a64a/image.png)
+
+
 
 
 ## Tags
