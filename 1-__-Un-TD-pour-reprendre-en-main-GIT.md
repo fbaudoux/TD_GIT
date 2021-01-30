@@ -251,5 +251,27 @@ Désormais un simple ```git push``` sans aucun argument nous permettra de remont
 
 Dès que l'on commence à travailler à plusieurs sur un projet, on va devoir gérer un certains nombres de nouveaux usages et les problèmes qui vont avec.
 
+Nous allons procéder par l'exemple pour reproduire certaines situations fâcheuses et voir comment git permet de les gérer.
+
+Alice et Bob commencent à travailler sur notre projet. 
+Alice doit réaliser la fonctionA
+Bob doit réaliser la fonctionB
+
+Tous les deux clone le projet depuis la forge et se placent sur la branche "develop"
+
+Alice realise la fonctionA et remonte son commit dans la forge la première.
+Lorsque Bob veut à son tour remonter son commit pour ajouter la fonctionB, il obtient   
+
+
+![image](uploads/691977698b6360e3045d2a5961a9881e/image.png)
+
+Impossible d'envoyer via un lien remote un nouveau commit si nous n'avons pas localement les derniers commits.
+
+Pour récupérer les derniers commits, il faut utiliser la commande ```git pull```
+
+![image](uploads/6af8d52e304e3d4af650c4323881e5c0/image.png)
+
+![image](uploads/ecf000c4ade36813f89580d6270ff92b/image.png)
+
 
 
