@@ -305,7 +305,6 @@ Et ensuite je push
 
 ### Le cas ou cela se passe moins bien
 
-Alice et Bob commencent à travailler sur notre projet. 
 Alice doit réaliser la fonctionC
 Bob doit réaliser la fonctionD
 
@@ -314,5 +313,10 @@ Les 2 fonctions C et D utilisent une librairie commune libCD.txt qu'il faut modi
 Alice realise la fonctionC et remonte son commit dans la forge la première.
 Lorsque Bob veut à son tour remonter son commit pour ajouter la fonctionD, il obtient
 
+![image](uploads/6e1184493b7bdc9beda5d7932b51d49a/image.png)
 
+Bob a désormais l'habitude et il fait un git pull
 
+![image](uploads/f16ed77173ca07a68663ab39be43bf7f/image.png)
+
+Git lui indique que le fichier libCD.txt est en conflit
