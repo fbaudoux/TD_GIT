@@ -253,35 +253,3 @@ Dès que l'on commence à travailler à plusieurs sur un projet, on va devoir g�
 
 
 
-## Tags
-
-Comme ce n'est pas évident de se rappeler d'un SHA-1 , on peut marquer un commit d'un tag qui nous permettra de le retrouver facilement  
-On peut mettre un tag sur le dernier commit en utilisant __git tag__  
-On peut mettre un tag sur un commit passé en utilisant __git tag "sha-1 du commit"__  
-Attention, quand on pose un tag sur un repository local, il n'est pas exporté sur le repository distant ( la forge ) via la commande push.  
-Il faut demander explicitement à remonter les tags sur la forge via la commande : __git push origin --tags__
-A partir du moment ou un tag a été posé, on peut retrouver la version du code source qui correspond à ce tag , en faisant __git checkout "nom du tag"__
-
-
-## Message de commit
-
-Il est important que les messages de commit soient explicites et que des conventions soient respectées par l'équipe.
-
-```<type>(<portée>): <sujet>```
-
-ou type peut prendre les valeurs suivantes
-
-* build : changements qui affectent le système de build ou des dépendances externes (npm, make…)
-* ci : changements concernant les fichiers et scripts d’intégration ou de configuration (Travis, Ansible, BrowserStack…)
-* feat : ajout d’une nouvelle fonctionnalité
-* fix : correction d’un bug
-* perf : amélioration des performances
-* refactor : modification qui n’apporte ni nouvelle fonctionalité ni d’amélioration de performances
-* style : changement qui n’apporte aucune alteration fonctionnelle ou sémantique (indentation, mise en forme, ajout d’espace, renommante d’une variable…)
-* docs : rédaction ou mise à jour de documentation
-* test : ajout ou modification de tests
-
-ou portée représente la fonctionnalité impactée
-
-ou sujet décrit les modifications apportées en moins de 80 caractères 
-* on utilise l’impératif présent : add, change, update, remove et non pas changed ou removed. add caching for better performance par exemple.
