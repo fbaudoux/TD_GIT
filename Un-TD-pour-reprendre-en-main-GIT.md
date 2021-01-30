@@ -2,7 +2,14 @@ Reprise en main de GIT
 
 Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simulant des cas d'usage de la vie réelle.
 
-### Je commence un nouveau projet perso
+
+# Table of matières
+1. [Je commence un projet](#introduction)
+2. [Je livre mon projet aux utilisateurs](#paragraph1)
+3. [Je monte une équipe de développement pour mon projet](#paragraph2)
+
+
+### Je commence un nouveau projet perso  <a name="introduction"></a>
 
 Je vais juste travailler sur mon ordi pour commencer, donc je me place dans un répertoire de travail et 
 je tape : 
@@ -93,7 +100,7 @@ Et il faut utiliser :
 ![image](uploads/742ef7777f573a5fb3798ef5c41f1dec/image.png)
 
 
-### Mon projet prend de l'ampleur
+### Mon projet prend de l'ampleur   <a name="paragraph1"></a>
 J'ai ajouté 10 fonction à mon logiciel et il va être mise à disposition d'utilisateurs.
 Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.  
 Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.  
@@ -172,6 +179,8 @@ ON peut également reprendre les corrections dans la branche de développement.
 
 ![image](uploads/fe2c3ab1f83befe3da415c280e8624dd/image.png)
 
+
+### Je travaille en équipe <a name="paragraph2"></a>
 
 ## Tags
 
