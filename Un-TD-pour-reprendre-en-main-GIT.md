@@ -191,9 +191,31 @@ Je me connecte à la forge de l'IUT et je demande la création d'un nouveau proj
 La forge de donne immédiatement toutes les informations dont j'ai besoin pour intégrer mon code source
 ![image](uploads/5f46516c19e368dd221f67c7450c5a30/image.png)
 
-Je n'ai plus qu'a suivre ce que la forge m'indique   
+Je n'ai plus qu'a suivre ce que la forge m'indique 
+
 ![image](uploads/36b40702994737b02613f0871ae0a64a/image.png)
 
+Mon projet, avec tous les commits et toutes les branches , est arrivé sur la forge.
+
+![image](uploads/9ebe2fdb6586a68d9d457a69dd2a4607/image.png)
+
+Un développeur qui doit récupérer le code source aura juste à exécuter la commande ``` git clone ```
+
+![image](uploads/b15dcdb3b659034fbd234e3875ca843d/image.png)
+
+Il pourra alors travailler sur une copie locale du code source, créer des branches , faire des commit ...
+Quand il sera satisfait de son travail, il pourra le remonter vers la forge grâce à la commande 
+git push en précisant le remote ( c'est à dire l'emplacement de la forge et le nom de la branche.
+''' git push origin main''' va remonter sur le remote origin le contenu de la branche main
+
+Si on ne précise pas le nom de la forge , git va utiliser le nom 
+
+
+( par défaut le nom du remote associé à la branche courante ) et le nom de la branche (par défaut la branche courante.
+
+## L'enfer c'est les autres
+
+Dès que l'on commence à travailler à plusieurs sur un projet, on va devoir gérer un certains nombres de nouveaux usages et les problèmes qui vont avec.
 
 
 
