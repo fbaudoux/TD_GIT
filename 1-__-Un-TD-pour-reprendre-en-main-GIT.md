@@ -343,16 +343,30 @@ Ouf , il a retrouvé un fonctionnement normal
 
 # Eviter le mode panique
 
-Bob est en cours sur un énorme développement, il a touché à plusieurs fichiers mais n'a encore fait aucun commit.
+## La mise sur étagère
+Bob est en cours de développement, il faut évoluer la fonction 3. Il a fait des modifications mais n'a encore fait aucun commit.
 A ce moment là, il reçoit un message indiquant qu'il y a un bug qui bloque la version de prod, et qu'il doit immédiatement repasser sur la branche main pour corriger la prod.
-Il fait un git checkout main et pour être sûr d'avoir la dernière version , il fait un git pull. Et là git lui dit qu'il ne peut pas faire le pull car plusieurs modifications qu'il a en cours vont être écrasée.  
+Il fait un git checkout main et il obtient: 
 
-Bob met sur étagère les modifications qu'il a en cours grâce à la commande ```git stash```, puis il peut faire le pull, corriger le bug , commit et push.
+![image](uploads/9e88c622e70b2636e6547e7110948489/image.png)
+
+Git ne veut pas le changer de branche car il a fait des modifications sur la branche develop qui seront écrasée si il passe sur la branche main.
+Bob n'a pas vraiment envie de faire un commit maintenant, il est en plein travail.
+  
+Pas de panique, Bob peut mettre sur étagère les modifications qu'il a en cours grâce à la commande ```git stash```
+
+
+
+
+ puis il peut faire le pull, corriger le bug , commit et push.
 Ensuite, il peut retourner sur sa branche develop et demander à reprendre les modifications qu'il a is sur étagère grâce à la commande ```git stash pop``` ou ```git stash apply```
 
-Bob a modifié un fichier par erreur, il a juste placer le fichier dans l'espace de staging, il veut annuler ses modifications
+
+## Head, reset , checkout
+
+Bob a modifié un fichier par erreur, il a juste placé le fichier dans l'espace de staging, il veut annuler ses modifications
 Il peut utiliser ```git reset nom_du_fichier``` pour l'enlever du staging
-Il peut utiliser ```git reset nom_du_fichier``` pour l'enlever du staging et annuler ses modifications
+Il peut utiliser ```git reset --hard nom_du_fichier``` pour l'enlever du staging et annuler ses modifications
 
 Bob a modifié un fichier par erreur, il a fait un commit mais pas de push.   
 Il veut annuler la modification
