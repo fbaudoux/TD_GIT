@@ -102,7 +102,7 @@ Et il faut utiliser :
 
 
 # Je livre mon projet aux beta-testeurs <a name="paragraph1"></a>
-J'ai ajouté 10 fonction à mon logiciel et il va être mise à disposition d'utilisateurs.
+J'ai ajouté 10 fonctions à mon logiciel et il va être mise à disposition d'utilisateurs.
 Si ils trouvent des bugs je devrais les corriger rapidement et relivrer le soft.  
 Mais j'ai encore plein d'autres idées de fonctions géniales à apporter à mon produit.  
 C'est comme si je devais avoir 2 versions différentes de mon produit...  Les branches sont là pour ça.
