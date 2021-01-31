@@ -81,7 +81,7 @@ Je peux retirer un fichier de la zone de staging grâce à ```git reset```
 
 ### Comment on peut voir les modifications qui ont été réalisée sur un fichier ? 
 
-Par exemple, si je modifier mon fichier fonction1.html qui contient initialement ça : 
+Par exemple, si je modifie mon fichier fonction1.html qui contient initialement ça : 
 
 ![image](uploads/c7e230635e15014ae5b070bb71b1b6e9/image.png)
 
