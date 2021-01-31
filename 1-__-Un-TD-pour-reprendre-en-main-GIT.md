@@ -11,9 +11,8 @@ Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simula
 
 # Je commence un projet <a name="introduction"></a>
 
-Pour le moment, c'est un projet personnel,je vais juste travailler sur mon ordi pour commencer.  
-Je me place dans un répertoire de travail et 
-je tape : 
+Pour le moment, c'est un projet personnel,je vais juste travailler sur mon ordi en local.  
+Je me place dans un répertoire de travail et je tape :    
 ```git init```
 
 Cela veut juste dire que je vais utiliser git comme gestionnaire de source pour ce projet.
