@@ -5,8 +5,9 @@ Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simula
 
 # Table of matières
 1. [Je commence un projet](#introduction)
-2. [Je livre mon projet aux utilisateurs](#paragraph1)
-3. [Je monte une équipe de développement pour mon projet](#paragraph2)
+2. [Je livre mon projet aux beta testeurs](#paragraph1)
+3. [Mon projet va partir en production](#paragraph2)
+3. [Eviter le mode panique](#paragraph3)
 
 
 # Je commence un projet <a name="introduction"></a>
@@ -341,7 +342,7 @@ Ouf , il a retrouvé un fonctionnement normal
 
 ![image](uploads/c86c164b5707bb60adbaa828579db366/image.png)
 
-# Eviter le mode panique
+# Eviter le mode panique <a name="paragraph3"></a>
 
 ## La mise sur étagère
 Bob est en cours de développement, il faut évoluer la fonction 3. Il a fait des modifications mais n'a encore fait aucun commit.
