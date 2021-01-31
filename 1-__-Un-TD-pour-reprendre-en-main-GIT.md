@@ -397,7 +397,30 @@ git reset , va en réalité déplacer notre HEAD vers un autre commit. Cela ne v
 HEAD~ signifie 1 commit avant HEAD  
 HEAD~~ signifie 1 commit avant HEAD  
 
- ![image](uploads/c67b41803eb2496fc2e9645270d37da9/image.png)
+![image](uploads/c67b41803eb2496fc2e9645270d37da9/image.png)
+
+![image](uploads/e5f512d5ffd36aa7621df36715ce68f5/image.png)
 
 Sinon, il peut récupérer la version du fichier qui est sur la forge en utilisant ```git checkout```
+
+![image](uploads/b705cb3c500ede44779f53dace052b96/image.png)
+
+Bob a modifié un fichier par erreur, il a fait un commit et il a fait le push.
+
+C'est le pire cas de figure.
+Bob va devoir placer son environnement de travail sur une ancienne version avec ```git checkout```.
+Pour cela, il doit retrouver une référence de commit ou son fichier était valide , via la commande ```git log```
+
+![image](uploads/1bf5b19c1ab13ab743682a1f0b1bc80e/image.png)
+
+Ensuite il peut déplacer HEAD sur ce commit.
+
+![image](uploads/b0ee9dc2ee1f5bfa25ef6020ba6d1f29/image.png)
+
+Il sera alors capable de retrouver son fichier tel qu'il était dans cette ancienne version et il devra le copier ailleurs sur son disque.
+Ensuite il remettra son environnement de travail sur "develop" grâce à ```git checkout```
+
+![image](uploads/bfafc467379d560cc27ecf239c76a30d/image.png)
+
+Il pourra enfin remettre la bonne version du fichier dans son environnement de travail, faire un add.commit/push et il aura réparé son erreur.
 
