@@ -343,10 +343,12 @@ Ouf , il a retrouvé un fonctionnement normal
 
 # Eviter le mode panique
 
-Bob a fait un énorme développement, il a touché à 50 fichiers.
-Au moment de faire un commit, il se dit qu'il va faire un pull juste avant pour éviter d'avoir un commit de merge. 
-Cela part d'un bon sentiment mais cela ne se passe pas comme il aurait voulu. 
-Sur les 50 fichiers qu'il a touché, il y en a au moins 25 en conflit, avec des dizaines de modifications dans les fichiers. Il va en avoir pour des heures à tout régler.
+Bob est en cours sur un énorme développement, il a touché à plusieurs fichiers mais n'a encore fait aucun commit.
 A ce moment là, il reçoit un message indiquant qu'il y a un bug qui bloque la version de prod, et qu'il doit immédiatement repasser sur la branche main pour corriger la prod.
-Il essaye un git checkout main 
-  
+Il fait un git checkout main et pour être sûr d'avoir la dernière version , il fait un git pull. Et là git lui dit qu'il ne peut pas faire le pull car plusieurs modifications qu'il a en cours vont être écrasée.  
+
+Bob met sur étagère les modifications qu'il a en cours grâce à la commande ```git stash```, puis il peut faire le pull, corriger le bug , commit et push.
+Ensuite, il peut retourner sur sa branche develop et demander à reprendre les modifications qu'il a is sur étagère grâce à la commande ```git stash pop``` ou ```git stash apply```
+
+
+Bob a supprimé par erreur un fichier, il veut le récupérer 
