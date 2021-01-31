@@ -204,7 +204,7 @@ Un développeur qui doit récupérer le code source aura juste à exécuter la c
 ![image](uploads/b15dcdb3b659034fbd234e3875ca843d/image.png)
 
 Il pourra alors travailler sur une copie locale du code source, créer des branches , faire des commit, etc.
-Comme il a récupérer le projet depuis la forge, il existe un lien l'espace de travail local à son poste et la forge.
+Comme il a récupéré le projet depuis la forge, il existe un lien l'espace de travail local à son poste et la forge.
 Ce lien est appelé "remote"
 
 On peut lister les différentes remotes d'un espace de travail local en faisant 
@@ -276,7 +276,7 @@ Pour récupérer les derniers commits, il faut utiliser la commande ```git pull`
 Pour bien comprende, regardons le log avant le pull  
 ![image](uploads/6af8d52e304e3d4af650c4323881e5c0/image.png)
 
-Puis faison le pull et regardons le log juste après
+Puis faisons le pull et regardons le log juste après
 ![image](uploads/ecf000c4ade36813f89580d6270ff92b/image.png)
 
 On comprend mieux, avec cette vue en graph, que l'on vient de prendre un 'commit de merge' 
