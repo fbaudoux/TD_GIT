@@ -341,3 +341,12 @@ Ouf , il a retrouvé un fonctionnement normal
 
 ![image](uploads/c86c164b5707bb60adbaa828579db366/image.png)
 
+# Eviter le mode panique
+
+Bob a fait un énorme développement, il a touché à 50 fichiers.
+Au moment de faire un commit, il se dit qu'il va faire un pull juste avant pour éviter d'avoir un commit de merge. 
+Cela part d'un bon sentiment mais cela ne se passe pas comme il aurait voulu. 
+Sur les 50 fichiers qu'il a touché, il y en a au moins 25 en conflit, avec des dizaines de modifications dans les fichiers. Il va en avoir pour des heures à tout régler.
+A ce moment là, il reçoit un message indiquant qu'il y a un bug qui bloque la version de prod, et qu'il doit immédiatement repasser sur la branche main pour corriger la prod.
+Il essaye un git checkout main 
+  
