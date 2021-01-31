@@ -393,6 +393,10 @@ Bob a modifié un fichier par erreur, il a fait un commit mais pas de push.
 Il veut annuler la modification  
 Si c'est le dernier commit, et qu'il ne contient que cette modification alors il peut annuler le dernier commit , en utilisant ``` git reset HEAD~```
 
+git reset , va en réalité déplacer notre HEAD vers un autre commit. Cela ne veut pas dire que ce commit est supprimé, cela veut juste dire que notre espace de travail ne pointe plus dessus.
+HEAD~ signifie 1 commit avant HEAD  
+HEAD~~ signifie 1 commit avant HEAD  
+
  ![image](uploads/c67b41803eb2496fc2e9645270d37da9/image.png)
 
 Sinon, il peut récupérer la version du fichier qui est sur la forge en utilisant ```git checkout```
