@@ -114,7 +114,7 @@ Si je tape la commande ```git branch --all```
 ![image](uploads/46dfd7685868edaed3c0a344aad124bb/image.png)
 
 Je vois qu'il n'existe qu'une seule branche à mon projet.
-Je décide donc du fonctionnement suivant, la branche "main" me servira pour le version de production et je vais créer une branche "develop" qui me servira à ajouter des nouvelles fonctions.
+Je décide donc du fonctionnement suivant, la branche "main" me servira pour la version de production et je vais créer une branche "develop" qui me servira à ajouter des nouvelles fonctions.
 
 ```git branch develop``` me permet de créer ma branche.
 
