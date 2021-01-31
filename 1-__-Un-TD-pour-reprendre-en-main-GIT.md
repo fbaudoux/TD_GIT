@@ -373,17 +373,27 @@ Quand il a terminé, il peut retourner sur sa branche develop et demander à rep
 La différence entre pop et apply, c'est que pop supprime le stash après l'avoir appliqué.
 
 
-## Head, reset , checkout
+## reset et checkout
 
-Bob a modifié un fichier par erreur, il a juste placé le fichier dans l'espace de staging, il veut annuler ses modifications
-Il peut utiliser ```git reset nom_du_fichier``` pour l'enlever du staging
-Il peut utiliser ```git reset --hard nom_du_fichier``` pour l'enlever du staging et annuler ses modifications
+HEAD représente le commit sur lequel point actuellement l'environnement de travail de Bob.
+
+Bob a modifié un fichier par erreur, il n'a pas placé le fichier dans l'espace de staging, il veut annuler ses modifications  
+Il peut utiliser ```git checkout nom_du_fichier``` pour annuler les modifications 
+
+![image](uploads/a2f54f8cd58c0c40b04db465a918be72/image.png)
+
+Bob a modifié un fichier par erreur, il a placé le fichier dans l'espace de staging, il veut annuler ses modifications  
+
+Il peut utiliser ```git reset nom_du_fichier``` pour l'enlever du staging et ensuite   
+```git checkout nom_du_fichier``` pour annuler les modifications 
+
+![image](uploads/6bd073ab0e4feb03acec1682626710ab/image.png)
 
 Bob a modifié un fichier par erreur, il a fait un commit mais pas de push.   
-Il veut annuler la modification
+Il veut annuler la modification  
 Si c'est le dernier commit, et qu'il ne contient que cette modification alors il peut annuler le dernier commit , en utilisant ``` git reset HEAD~```
+
+ ![image](uploads/c67b41803eb2496fc2e9645270d37da9/image.png)
 
 Sinon, il peut récupérer la version du fichier qui est sur la forge en utilisant ```git checkout```
 
-
- ![image](uploads/c67b41803eb2496fc2e9645270d37da9/image.png)
