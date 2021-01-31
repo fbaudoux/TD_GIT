@@ -350,5 +350,13 @@ Il fait un git checkout main et pour être sûr d'avoir la dernière version , i
 Bob met sur étagère les modifications qu'il a en cours grâce à la commande ```git stash```, puis il peut faire le pull, corriger le bug , commit et push.
 Ensuite, il peut retourner sur sa branche develop et demander à reprendre les modifications qu'il a is sur étagère grâce à la commande ```git stash pop``` ou ```git stash apply```
 
+Bob a modifié un fichier par erreur, il veut annuler ses modifications
+Il peut utiliser ```git reset nom_du_fichier``` 
 
-Bob a supprimé par erreur un fichier, il veut le récupérer 
+Bob a modifié un fichier par erreur, il a fait un commit mais pas de push.Il veut annuler la modification
+Si c'est le dernier commit, et qu'il ne contient que cette modification alors il peut annuler le dernier commit , en utilisant ``` git reset```
+
+Sinon, il peut récupérer la version du fichier qui est sur la forge en utilisant
+
+
+ 
