@@ -320,3 +320,25 @@ Bob a désormais l'habitude et il fait un git pull
 ![image](uploads/f16ed77173ca07a68663ab39be43bf7f/image.png)
 
 Git lui indique que le fichier libCD.txt est en conflit
+
+En effet, si on ouvre le fichier :  
+
+![image](uploads/b5c441f272dbc057403686a38da3b250/image.png)
+
+Alice a ajouté la ligne "fonctionC"  
+Bob a ajouté la ligne "fonctionD"   
+
+Git ne sait plus comment gérer et nous demande de l'aider.
+
+Bob corrige donc le fichier 
+
+![image](uploads/e50b1c04747d72ccb64cfe234d5e778d/image.png)
+
+et il commit
+
+![image](uploads/b0b71baaa8d59a28c00143feecc291a9/image.png)
+
+Ouf , il a retrouvé un fonctionnement normal
+
+![image](uploads/c86c164b5707bb60adbaa828579db366/image.png)
+
