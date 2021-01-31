@@ -355,11 +355,22 @@ Bob n'a pas vraiment envie de faire un commit maintenant, il est en plein travai
   
 Pas de panique, Bob peut mettre sur étagère les modifications qu'il a en cours grâce à la commande ```git stash```
 
+![image](uploads/854a03f83bf0971fa3c5357de0c2ae1f/image.png)
+
+Si on veut voir toutes les mises sur étagères, on peut faire :  
+
+![image](uploads/f3cc5702f35db745aeb1df6682f05dac/image.png)
 
 
+![image](uploads/b28d6d7eec73724e723638ccaa80f47d/image.png)
 
- puis il peut faire le pull, corriger le bug , commit et push.
-Ensuite, il peut retourner sur sa branche develop et demander à reprendre les modifications qu'il a is sur étagère grâce à la commande ```git stash pop``` ou ```git stash apply```
+Bob peut désormais effectuer le correctif sur la branche "main".
+
+Quand il a terminé, il peut retourner sur sa branche develop et demander à reprendre les modifications qu'il a mis sur étagère grâce à la commande ```git stash pop``` ou ```git stash apply```
+
+![image](uploads/a65aad23a8281171d6c208dbbdf4c250/image.png)
+
+La différence entre pop et apply, c'est que pop supprime le stash après l'avoir appliqué.
 
 
 ## Head, reset , checkout
