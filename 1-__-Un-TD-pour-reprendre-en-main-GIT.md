@@ -3,7 +3,7 @@ Reprise en main de GIT
 Dans ce TD, nous allons réaliser un ensemble de manipulations sur GIT en simulant des cas d'usage de la vie réelle.
 
 
-# Table of matières
+# Table des matières
 1. [Je commence un projet](#introduction)
 2. [Je livre mon projet aux beta testeurs](#paragraph1)
 3. [Mon projet va partir en production](#paragraph2)
